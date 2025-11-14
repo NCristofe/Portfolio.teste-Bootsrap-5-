@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natanael Cristofe – Portfolio</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background: #000;
+            color: white;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .hero img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .tools img {
+            width: 50px;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <a class="navbar-brand fw-bold" href="#">
+            <img src="./imgs/logo.svg" width="50" class="me-2">
+            Natanael Cristofe
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto gap-4">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- HERO -->
+    <section class="hero text-center mt-5 container">
+        <img src="./imgs/Avatar.png" class="rounded-circle mb-4">
+
+        <h1 class="fw-bold">I develop systems and bring ideas to life through code.</h1>
+
+        <p class="mt-3">
+            I am a Systems Development student focused on building functional, secure, and well-structured
+            applications.
+            I have knowledge in Java, HTML, CSS, and SQL, working on the development of modern interfaces and efficient
+            logic.
+        </p>
+
+        <div class="mt-4">
+            <a href="#contact" class="btn btn-light px-4 py-2 me-2 fw-semibold">Get In Touch</a>
+            <a href="#" class="btn btn-outline-light px-4 py-2 fw-semibold">Download CV</a>
+        </div>
+    </section>
+
+
+
+    <!-- EXPERIENCE WITH -->
+    <section class="text-center mt-5">
+        <h3 class="fw-bold mb-4">EXPERIENCE WITH</h3>
+
+        <div class="d-flex justify-content-center gap-5 flex-wrap tools">
+            <img src="./imgs/java-svgrepo-com.svg">
+            <img src="./imgs/html-5-svgrepo-com.svg">
+            <img src="./imgs/css-3-svgrepo-com.svg">
+            <img src="./imgs/javascript-svgrepo-com.svg">
+            <img src="./imgs/sql-database-generic-svgrepo-com.svg">
+        </div>
+    </section>
+
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container mt-5">
+        <h2 class="fw-bold text-warning mb-4">Projects</h2>
+
+        <div class="row g-4">
+
+            <!-- PROJETO 1 -->
+            <div class="col-md-6">
+                <div class="card bg-dark border-secondary project-card">
+                    <img src="./imgs/projeto-1.png" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">HTML Tutorial</h5>
+                        <a href="https://690ad50fa2135fb41ecb6e94--glistening-sawine-8ea770.netlify.app/" class="text-warning">
+                            CLICK HERE TO VISIT <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJETO 2 -->
+            <div class="col-md-6">
+                <div class="card bg-dark border-secondary project-card">
+                    <img src="./imgs/projeto-2.png" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">CSS Tutorial</h5>
+                        <a href="
+https://ncristofe.github.io/auth-pages/
+" class="text-warning">
+                            CLICK HERE TO VISIT <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="container mt-5">
+        <h2 class="fw-bold mb-4 text-warning">Professional Experience</h2>
+
+        <p>
+            I have experience developing authentication systems such as login and signup pages, applying principles of
+            clean architecture and secure data handling. These projects helped me build a strong foundation in web
+            development.
+        </p>
+
+        <p>
+            I work with HTML, CSS, JavaScript, Java and SQL, creating responsive layouts and well-structured components
+            that ensure a smooth user experience across devices.
+        </p>
+
+        <p>
+            I have developed institutional websites and academic systems following best programming practices, always
+            focusing on code readability, maintainability and performance.
+        </p>
+
+        <p>
+            I constantly study and practice new technologies, especially in backend and web development, seeking to
+            expand my skills and become a more complete professional.
+        </p>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer id="contact" class="mt-5 py-4 text-center border-top border-secondary">
+        <h4 class="fw-bold mb-3">Contact</h4>
+
+        <p>Email:</p>
+        <a href="mailto:cristofenatanael@gmail.com" class="d-block mb-3">
+            <i class="fa-solid fa-envelope me-2"></i> cristofenatanael@gmail.com
+        </a>
+
+        <div class="d-flex justify-content-center gap-4 mt-3">
+            <a href="https://github.com/NCristofe"><i class="fa-brands fa-github fa-xl"></i></a>
+            <a href="https://www.linkedin.com/in/natanael-cristofe-b9a73734a/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
